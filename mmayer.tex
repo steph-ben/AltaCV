@@ -78,35 +78,35 @@
 %% Use (and optionally edit if necessary) this .tex if you
 %% want to use an author-year reference style like APA(6)
 %% for your publication list
-% \input{pubs-authoryear.cfg}
+% \input{pubs-authoryear.tex}
 
 %% Use (and optionally edit if necessary) this .tex if you
 %% want an originally numerical reference style like IEEE
 %% for your publication list
-\input{pubs-num.cfg}
+\input{pubs-num.tex}
 
 %% sample.bib contains your publications
 \addbibresource{sample.bib}
 
 \begin{document}
-\name{Marissa Mayer}
-\tagline{Business Woman \& Proud Geek}
+\name{Stéphane Benchimol}
+\tagline{Senior Software Engineer \& Devops}
 % Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
 %% You can add multiple photos on the left or right
-\photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+%\photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
 % \photoL{2cm}{Yacht_High,Suitcase_High}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{mmayer@yahoo-inc.com}
-%   \phone{000-00-0000}
-  \mailaddress{Address, Street, 00000 County}
-  \location{Sunnyvale, CA}
-  \homepage{marissamayr.tumblr.com}
+  \email{stephane.benchimol@gmail.com}
+  \phone{+33 6 60 64 50 17}
+  \mailaddress{Toulouse, France}
+  %\location{Sunnyvale, CA}
+  %\homepage{marissamayr.tumblr.com}
   % \twitter{@marissamayer}
-  \xtwitter{@marissamayer}
-  \linkedin{marissamayer}
-%   \github{github.com/mmayer} % I'm just making this up though.
+  %\xtwitter{@marissamayer}
+  %\linkedin{https://www.linkedin.com/in/stephane-benchimol-89378387/}
+  \github{steph-ben} % I'm just making this up though.
 %   \orcid{0000-0000-0000-0000} % Obviously making this up too.
   %% You can add your own arbitrary detail with
   %% \printinfo{symbol}{detail}[optional hyperlink prefix]
@@ -130,6 +130,10 @@
 
 \makecvheader
 
+\divider
+
+With 15 years of experience, I have developed strong expertise in technical coordination, data processing and deploying operational systems for clients. I am now seeking exciting new challenges to apply my skills to innovative projects.
+
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
 \AtBeginEnvironment{itemize}{\small}
 
@@ -140,36 +144,50 @@
 % break across pages if things get too long.
 \begin{paracol}{2}
 
-\cvsection{Experience}
+\cvsection{Profesionnal experiences}
 
-\cvevent{President \& CEO}{Yahoo!}{July 2012 -- Ongoing}{Sunnyvale, CA}
+\cvevent{Meteo France International}{}{2008 - Today}{Toulouse, France}
+\divider
+
+
+\cvevent{}{Senior Software Engineer and Architect}{}{}
 \begin{itemize}
-\item Led the \$5 billion acquisition of the company with Verizon -- the entity which believed most in the immense value Yahoo!\ has created
-\item Acquired Tumblr for \$1.1 billion and moved the company's blog there
-\item Built Yahoo's mobile, video and social businesses from nothing in 2011 to \$1.6 billion in GAAP revenue in 2015
-\item Tripled the company's mobile base to over 600 million monthly active users and generated over \$1 billion of mobile advertising revenue last year
+\item Design solution for long term capacity storage and access of meteorological (satellite, observation, forecasts)
+\item Ensure user requirements with Product Owner, implement and conduct technical reviews
+\item Deploy in operation in several customer sites within few months
+\item Stack : Docker, Python, RabbitMQ, Grafana, MongoDB
 \end{itemize}
 
 \divider
 
-\cvevent{Vice President of Location \& Services}{Google}{Oct 2010 -- July 2012}{Palo Alto, CA}
+\cvevent{}{Data Science - IA applied to weather forecast}{}{}
 \begin{itemize}
-\item Position Google Maps as the world leader in mobile apps and navigation
-\item Oversaw 1000+ engineers and product managers working on Google Maps, Google Places and Google Earth
+\item Research, development and operational deployment for BMKG (Indonesian Meteorological Service)
+\item Improving weather forecasts (Model Output Statistics)
+\item Improving risk prediction (Impact Based Forecast)
+\item Stack : HPC, Slurm, scikit-learn, Notebook
 \end{itemize}
 
 \divider
 
-\cvevent{Vice President of Search Products \& UX}{Google}{2005 --  2010}{Palo Alto, CA}
+\cvevent{}{Technical coordinator for Integrated Project}{}{}
+\begin{itemize}
+\item Coordination for large turnkey integrated project, modernizing National Meteorological Services (NMS) worldwide. Within a multi-team environment, with international customers
+\item Architecture design, system and data integration, operation, training and support
+\item Key achievements : Indonesia (2022), Angola (2020), ASECNA (2018), Indonesia (2014), India (2010)
+\end{itemize}
 
 \divider
 
-\cvevent{Product Manager \& UI Lead}{Google}{Oct 2001 -- July 2005}{Palo Alto, CA}
-
+\cvevent{}{Product Owner Supervision}{}{}
 \begin{itemize}
-\item Appointed by the founder Larry Page in 2001 to lead the Product Management and User Interaction teams
-\item Optimized Google's homepage and A/B tested every minor detail to increase usability (incl.~spacing between words, color schemes and pixel-by-pixel element alignment)
+\item Remote, heterogeneous site supervision worldwide
+\item Software, system, hardware and observation sites
+\item Limited connectivity, local and centralised supervision
+\item Stack : Zabbix, Grafana
+
 \end{itemize}
+
 
 % \divider
 
@@ -180,118 +198,113 @@
 % \item Developed targeted advertisement in order to use user's search queries and show them related ads
 % \end{itemize}
 
-\cvsection{A Day of My Life}
+%\cvsection{A Day of My Life}
 
 % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
 % \wheelchart{outer radius}{inner radius}{
 % comma-separated list of value/text width/color/detail}
 % Some ad-hoc tweaking to adjust the labels so that they don't overlap
-\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
-\wheelchart{1.5cm}{0.5cm}{%
-  10/13em/accent!30/Sleeping \& dreaming about work,
-  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
-  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
-  20/11em/accent!40/Spending time with family,
-  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
-  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
-  5/8em/accent!20/Baking cupcakes
-}
+%\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+%\wheelchart{1.5cm}{0.5cm}{%
+%  10/13em/accent!30/Sleeping \& dreaming about work,
+%  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%  20/11em/accent!40/Spending time with family,
+%  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
+%  5/8em/accent!20/Baking cupcakes
+%}
 
 % use ONLY \newpage if you want to force a page break for
 % ONLY the currentc column
-\newpage
+%\newpage
 
-\cvsection{Publications}
+%\cvsection{Publications}
 
 %% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
 %% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
 %% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
-\mynames{Lim/Lian\bibnamedelima Tze,
-  Wong/Lian\bibnamedelima Tze,
-  Lim/Tracy,
-  Lim/L.\bibnamedelimi T.}
+%\mynames{Lim/Lian\bibnamedelima Tze,
+%  Wong/Lian\bibnamedelima Tze,
+%  Lim/Tracy,
+%  Lim/L.\bibnamedelimi T.}
 %% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
 
-\nocite{*}
+%\nocite{*}
 
-\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
 
-\divider
+%\divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+%\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
 
-\divider
+%\divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
+%\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
 \switchcolumn
 
-\cvsection{Life Philosophy}
-\begin{quote}
-``If you don't have any shadows, you're not standing in the light.''
-\end{quote}
-
-\cvsection{Most Proud of}
-
-\cvachievement{\faTrophy}{Courage I had}{to take a sinking ship and try to make it float}
-
-\divider
-
-\cvachievement{\faHeartbeat}{Persistence \& Loyalty}{I showed despite the hard moments and my willingness to stay with Yahoo after the acquisition}
-
-\divider
-
-\cvachievement{\faChartLine}{Google's Growth}{from a hundred thousand searches per day to over a billion}
-
-\divider
-
-\cvachievement{\faFemale}{Inspiring women in tech}{Youngest CEO on Fortune's list of 50 most powerful women}
-
 \cvsection{Strengths}
 
-\cvtag{Hard-working (18/24)}
-\cvtag{Persuasive}\\
-\cvtag{Motivator \& Leader}
+Technical skills
 
-\divider\smallskip
+\cvskill{Python}{5}
+\cvskill{Ansible}{5}
+\cvskill{Kubernetes}{3} %% supports X.5 values.
 
-\cvtag{UX}
-\cvtag{Mobile Devices \& Applications}
-\cvtag{Product Management \& Marketing}
+\divider
+
+Relational
+
+\cvtag{Team work}
+\cvtag{Empathetic}
+\cvtag{Innovative}
+\cvtag{Organized}
+\cvtag{Problem-solver}
+
+\divider
+
+Stack software
+
+\cvtag{Python}
+\cvtag{prefect}
+\cvtag{FastAPI}
+\cvtag{Notebook}
+\cvtag{MongoDB}
+\cvtag{PostreSQL}
+
+\divider
+
+Stack Devops
+
+\cvtag{Ansible}
+\cvtag{Gitlab}
+\cvtag{Linux}
+\cvtag{VMWare}
+\cvtag{Docker}
+\cvtag{Kubernetes}
+
 
 \cvsection{Languages}
 
-\cvskill{English}{5}
-% \divider
-
-\cvskill{Spanish}{4}
-% \divider
-
-\cvskill{German}{3.5} %% supports X.5 values.
+\cvskill{French}{5}
+\cvskill{English}{4}
+\cvskill{German}{0.5} %% supports X.5 values.
 
 
 \cvsection{Education}
 
-\cvevent{M.S.\ in Computer Science}{Stanford University}{Sept 1997 -- June 1999}{}
+\cvevent{Computer Science Engineer}{ENSSAT}{Sept. 2005 - 2008}{Lannion, France}
+Including ERASMUS at Tempere University of Technology, Finland
 
 \divider
 
-\cvevent{B.S.\ in Symbolic Systems}{Stanford University}{Sept 1993 -- June 1997}{}
+\cvevent{Electronic Industrial Computing}{IUT GEII}{Sept 2003 - 2005}{Cachan, France}
 
-\newpage
+Including intership at Quebec University at Rimouski, Canada
 
-\cvsection{Referees}
-
-% \cvref{name}{email}{mailing address}
-\cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-{Address Line 1\\Address line 2}
-
-\divider
-
-\cvref{Prof.\ Gamma Delta}{Institute}{g.delta@university.edu}
-{Address Line 1\\Address line 2}
 
 \end{paracol}
 
