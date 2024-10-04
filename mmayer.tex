@@ -86,10 +86,10 @@
 %% Use (and optionally edit if necessary) this .tex if you
 %% want an originally numerical reference style like IEEE
 %% for your publication list
-\input{pubs-num.tex}
+%\input{pubs-num.tex}
 
 %% sample.bib contains your publications
-\addbibresource{sample.bib}
+%\addbibresource{sample.bib}
 
 \begin{document}
 \name{Stéphane Benchimol}
@@ -135,7 +135,9 @@
 
 \divider
 
+\textbf{\textit{
 With 15 years of experience, I have developed strong expertise in technical coordination, data processing and deploying operational systems for clients. I am now seeking exciting new challenges to apply my skills to innovative projects.
+}}
 \medskip
 
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
@@ -151,8 +153,6 @@ With 15 years of experience, I have developed strong expertise in technical coor
 \cvsection{Profesionnal experiences}
 
 \cvevent{Meteo France International}{}{2008 - Today}{Toulouse, France}
-
-
 
 \cvevent{}{Senior Software Engineer and Architect}{}{}
 \begin{itemize}
@@ -192,70 +192,15 @@ With 15 years of experience, I have developed strong expertise in technical coor
 
 \end{itemize}
 
-
+\medskip
 \cvsection{Education}
 
-\cvevent{Computer Science Engineer, ENSSAT}{}{Sept. 2005 - 2008}{Lannion, France}
+\cvevent{Computer Science Engineer}{ENSSAT}{Sept. 2005 - 2008}{Lannion, France}
 Including ERASMUS at Tempere University of Technology, Finland
 
-\divider
-
-\cvevent{Electronic Industrial Computing, IUT GEII}{}{Sept 2003 - 2005}{Cachan, France}
-
+\cvevent{Electronic Industrial Computing}{IUT GEII}{Sept 2003 - 2005}{Cachan, France}
 Including intership at Quebec University at Rimouski, Canada
 
-% \divider
-
-% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
-
-% \begin{itemize}
-% \item Joined the company as employe \#20 and female employee \#1
-% \item Developed targeted advertisement in order to use user's search queries and show them related ads
-% \end{itemize}
-
-%\cvsection{A Day of My Life}
-
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-% Some ad-hoc tweaking to adjust the labels so that they don't overlap
-%\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
-%\wheelchart{1.5cm}{0.5cm}{%
-%  10/13em/accent!30/Sleeping \& dreaming about work,
-%  25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
-%  5/11em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
-%  20/11em/accent!40/Spending time with family,
-%  5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
-%  30/9em/accent/Showing Yahoo!\ \mbox{employees} that their work has meaning,
-%  5/8em/accent!20/Baking cupcakes
-%}
-
-% use ONLY \newpage if you want to force a page break for
-% ONLY the currentc column
-%\newpage
-
-%\cvsection{Publications}
-
-%% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
-%% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
-%% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
-%\mynames{Lim/Lian\bibnamedelima Tze,
-%  Wong/Lian\bibnamedelima Tze,
-%  Lim/Tracy,
-%  Lim/L.\bibnamedelimi T.}
-%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
-
-%\nocite{*}
-
-%\printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
-
-%\divider
-
-%\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
-
-%\divider
-
-%\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Conference Proceedings}},type=inproceedings]
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
@@ -302,20 +247,23 @@ Including intership at Quebec University at Rimouski, Canada
 \cvtag{Docker}
 \cvtag{Kubernetes}
 
-
+\bigskip
 \cvsection{Languages}
 
 \cvskill{French}{5}
 \cvskill{English}{4}
 
+
+
+\bigskip
 \cvsection{About me}
 
-\begin{itemize}
-    \item Rock climbing
-    \item Running
-    \item Ski touring
-    \item 2012 : Backpacking/windsurfing to Oceania / South-east
-\end{itemize}
+\cvachievement{\faMountain}{Rock Climbing}{}
+\cvachievement{\faRunning}{Running}{}
+\cvachievement{\faSkiing}{Ski Touring}{}
+\cvachievement{\faGlobeEurope}{2012 : Backpacking to Oceania}{}
+
+
 \end{paracol}
 
 \end{document}

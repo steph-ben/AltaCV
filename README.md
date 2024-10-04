@@ -211,3 +211,33 @@ as well as doing a bit of arithmetic when you're making the header to get it ful
 \makecvheader
 \end{adjustwidth}
 ```
+
+
+
+### Fedora installation
+
+
+   144 | install texlive-collection-latex texlive-collection-latexrecommended texlive-xetex-d | 2024-10-04 09:25 | Install        |   68   
+   143 | install texlive texlive-latex texlive-xetex                                          | 2024-10-04 09:24 | Install        |   99   
+   142 | install -y texlive-fontaxes                                                          | 2024-10-04 09:14 | Install        |    1   
+   141 | install -y texlive-lato                                                              | 2024-10-04 09:13 | Install        |    2   
+   140 | install -y texlive-paracol                                                           | 2024-10-04 09:13 | Install        |    1   
+   139 | install -y texlive-multirow                                                          | 2024-10-04 09:12 | Install        |    1   
+   138 | install -y texlive-dashrule                                                          | 2024-10-04 09:12 | Install        |    1   
+   137 | install -y texlive-adjustbox                                                         | 2024-10-04 09:11 | Install        |    3   
+   136 | install -y texlive-tikzfill                                                          | 2024-10-04 02:34 | Install        |    1   
+   135 | install -y texlive-tcolorbox                                                         | 2024-10-04 02:34 | Install        |    3   
+   134 | install -y texlive-ec                                                                | 2024-10-04 02:33 | Install        |    1   
+   133 | install -y texlive-metafont                                                          | 2024-10-04 02:31 | Install        |    2   
+   132 | install -y texlive-colorprofiles                                                     | 2024-10-04 01:57 | Install        |    1   
+   131 | install -y texlive-cmap                                                              | 2024-10-04 01:56 | Install        |    1   
+   130 | install -y texlive-simpleicons                                                       | 2024-10-04 01:56 | Install        |    1   
+   129 | install texlive-fontawesome5 -y                                                      | 2024-10-04 01:55 | Install        |    1   
+   128 | install texlive-accsupp -y                                                           | 2024-10-04 01:53 | Install        |    1   
+   127 | install texlive-everyshi -y                                                          | 2024-10-04 01:52 | Install        |    1   
+   126 | install texlive-pdfx texlive-pdfxup -y                                               | 2024-10-04 01:51 | Install        |    3   
+   125 | install texlive-extsizes                                                             | 2024-10-04 01:50 | Install        |    1   
+   124 | install -y texlive-latex   
+   
+
+ pdflatex -file-line-error -interaction=nonstopmode -synctex=1 -output-format=pdf -output-directory=/home/benchimols/Code/_github/AltaCV/out mmayer.tex
