@@ -1,0 +1,274 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.2, 28 Aug 2024) written by LianTze Lim (liantze@gmail.com), based on the
+% CV created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.2cm,bottom=1.2cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" mmayer.tex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+%\definecolor{VividPurple}{HTML}{3E0097}
+%\definecolor{SlateGrey}{HTML}{2E2E2E}
+%\definecolor{LightGrey}{HTML}{666666}
+\definecolor{VividPurple}{HTML}{008080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear.tex}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+%\input{pubs-num.tex}
+
+%% sample.bib contains your publications
+%\addbibresource{sample.bib}
+
+\begin{document}
+\name{Stéphane Benchimol}
+\tagline{Senior Software Engineer \& System}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+\photoR{2,5cm}{cv/me_center.png}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{stephane.benchimol@gmail.com}
+  \phone{+33 6 60 64 50 17}
+  \mailaddress{Toulouse, France}
+  %\location{Sunnyvale, CA}
+  %\homepage{marissamayr.tumblr.com}
+  % \twitter{@marissamayer}
+  %\xtwitter{@marissamayer}
+  %\linkedin{https://www.linkedin.com/in/stephane-benchimol-89378387/}
+  \github{steph-ben} % I'm just making this up though.
+%   \orcid{0000-0000-0000-0000} % Obviously making this up too.
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+	%%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+
+\divider
+
+\textbf{\textit{
+With 15 years of experience, I have developed strong expertise in technical coordination, data processing and deploying operational systems for clients. I am now seeking exciting new challenges to apply my skills to innovative projects.
+}}
+\medskip
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Profesionnal experiences}
+
+\cvevent{Meteo France International}{}{2008 - Today}{Toulouse, France}
+
+\cvevent{}{Senior Software Engineer and Architect}{}{}
+\begin{itemize}
+\item \textbf{Design solution} for long term capacity storage and access of meteorological (satellite, observation, forecasts)
+\item Ensure \textbf{user requirements} with Product Owner, \textbf{implement} and conduct technical reviews
+\item \textbf{Deploy in operation} in several customer sites within few months
+\item Stack : Docker, Python, RabbitMQ, Grafana, MongoDB
+\end{itemize}
+
+\divider
+
+\cvevent{}{Devops/Network Engineer}{}{}
+\begin{itemize}
+\item Setting up client infrastructure
+\item Managing HPC workload manager
+\item Troubleshooting from network to applicative stack
+\item Stack : VMWare, Firewall, HPC, Slurm, netcat
+\end{itemize}
+
+\divider
+
+\cvevent{}{Technical coordinator for Integrated Project}{}{}
+\begin{itemize}
+\item Coordination for \textbf{large turnkey integrated project}, modernizing National Meteorological Services (NMS) worldwide. Within a multi-team environment, with i\textbf{nternational customers}
+\item Architecture design, \textbf{system and data integration}, operation, training and support
+\item Key achievements : Indonesia (2022), Angola (2020), ASECNA (2018), Indonesia (2014), India (2010)
+\end{itemize}
+
+\divider
+
+\cvevent{}{Product Owner Supervision}{}{}
+\begin{itemize}
+\item Remote, heterogeneous site supervision worldwide
+\item Software, system, hardware and observation sites
+\item Limited connectivity, local and centralised supervision
+\item Stack : Zabbix, Grafana
+
+\end{itemize}
+
+\medskip
+\cvsection{Education}
+
+\cvevent{Computer Science Engineer}{ENSSAT}{Sept. 2005 - 2008}{Lannion, France}
+Including ERASMUS at Tempere University of Technology, Finland
+
+\divider
+
+\cvevent{Electronic Industrial Computing}{IUT GEII}{Sept 2003 - 2005}{Cachan, France}
+Including intership at Quebec University at Rimouski, Canada
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Strengths}
+
+\textbf{\color{accent}\large{Technical skills}}\par\medskip
+
+\cvskill{Python}{5}
+\cvskill{Ansible}{5}
+\cvskill{Linux}{4} %% supports X.5 values.
+
+\divider
+
+\textbf{\color{accent}\large{Relational}}\par\medskip
+
+\cvtag{Team work}
+\cvtag{Empathetic}
+\cvtag{Innovative}
+\cvtag{Organized}
+\cvtag{Problem-solver}
+
+\divider
+
+\textbf{\color{accent}\large{Stack Network}}\par\medskip
+\medskip
+
+\cvtag{TCP/UDP}
+\cvtag{VMWare}
+\cvtag{Cisco ASA}
+\cvtag{Linux}
+\cvtag{Wireshark}
+
+\divider
+
+\textbf{\color{accent}\large{Stack software}}\par\medskip
+
+\cvtag{Nginx}
+\cvtag{Zabbix}
+\cvtag{Wireshark}
+\cvtag{Python}
+\cvtag{FastAPI}
+\cvtag{PostreSQL}
+\cvtag{Docker}
+\cvtag{Kubernetes}
+
+
+
+\bigskip
+\cvsection{Languages}
+
+\cvskill{French}{5}
+\cvskill{English}{4}
+
+
+
+\bigskip
+\cvsection{About me}
+
+\cvachievement{\faMountain}{Rock Climbing}{}
+\cvachievement{\faRunning}{Running}{}
+\cvachievement{\faSkiing}{Ski Touring}{}
+\cvachievement{\faGlobeEurope}{2012 : Backpacking to Oceania}{}
+
+
+\end{paracol}
+
+\end{document}
